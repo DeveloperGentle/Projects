@@ -1,0 +1,129 @@
+<html lang="en">
+<head>
+ 
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="bootstrap.min.css">
+ <style>
+  body {
+   background-color: #f5f6fa;
+  }
+    * {
+    transition:all 300ms ease-out;
+    box-sizing: border-box;
+    font-weight: 500;
+    font-family: "Poppins",'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+   }
+
+   .menu-img {
+    width: 205px;
+    height: 150px;
+    border-radius: 10px;
+    border: 2px solid #f0932b;
+   }
+
+hr {
+margin-left: 47vw;
+margin-right: 47vw;
+border-width: 3px;
+border-color: #f0932b;
+opacity: 1;
+}
+
+.menuBtn {
+ border-color: #f0932b;
+ color: #f0932b;
+ font-size: 0.9em;
+}
+
+.menuBtn:hover {
+background: none;
+border-color: #f0932b;
+color: #f0932b;
+}
+
+.menuBtn:focus {
+ background-color: #f0932b;
+ color: white;
+}
+
+.menu-con {
+ width: 600px;
+ 
+}
+
+.menu {
+ transform: scale(0.95,0.95);
+}
+
+.menu-layout {
+ margin-bottom: 30px;
+}
+
+.menu-title {
+ font-size: 1em;
+ letter-spacing: 2px;
+ font-weight: 600;
+}
+
+.menu-desc {
+ font-size: 0.85em;
+}
+
+.price {
+float: right;
+ color: #f0932b;
+ margin-right: 69px;
+}
+
+@media (max-width:768px) {
+ .menu-layout {
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+ }
+
+ .menu {
+  transform: scale(0.9,0.9);
+  gap: 20px;
+ }
+
+ .menu-con {
+  width: 510px;
+ }
+
+
+ 
+}
+
+
+
+   
+ </style>
+ <title>menu</title>
+</head>
+<body>
+ 
+ <h3 class="text-center mt-5">Our menu</h3>
+ <hr/>
+
+ <section class="btn-container d-flex justify-content-center align-content-center gap-3 mb-5">
+ 
+ <button class="btn btn-outline-secondary menuBtn one" onclick="loadMenu('All')">All</button>
+ <button class="btn btn-outline-secondary menuBtn two" onclick="loadMenu('Breakfast')">Breakfast</button>
+ <button class="btn btn-outline-secondary menuBtn three" onclick="loadMenu('Lunch')">Lunch</button>
+ <button class="btn btn-outline-secondary menuBtn four" onclick="loadMenu('Shakes')">Shakes</button>
+
+</section>
+ <section class="menu d-flex flex-column">
+
+
+
+
+</section>
+ <script src="jquery.min.js"></script>
+ <script src="menu.js"></script>
+</body>
+</html>

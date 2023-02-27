@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="bootstrap.min.css">
+ <style>
+ * {
+   transition:all 300ms ease-out;
+   box-sizing: border-box;
+   font-weight: 500;
+   font-family: "Poppins",'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   letter-spacing: 1px;
+  }
+
+  .bud-section {
+   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+   height: max-content;
+   width: 450px;
+   margin-top: 150px;
+  }
+
+  .btn,.form-control {
+   font-weight: 500;
+  }
+
+  .btn {
+   height: max-content;
+   width: max-content;
+  }
+  .submit-btn {
+   font-size: 0.9em;
+  
+  }
+
+  .delete-btn,.edit-btn {
+   font-size: 0.75em;
+  
+  }
+
+  .error {
+   opacity: 0;
+  }
+
+  @media (max-width:768px) {
+   .bud-section {
+    transform: scale(0.95,0.95);
+   }
+  }
+
+
+ </style>
+ <title>grocery bud</title>
+</head>
+<body class="d-flex justify-content-center">
+<section class="bud-section p-5">
+<p class="error text-center"></p>
+<h4 class="text-center mb-4">Grocery bud</h4>
+
+<form  class="d-flex align-content-center form gap-1 mb-4">
+
+<input type="text" class="form-control" placeholder="e.g. eggs">
+
+<button type="submit"class="btn btn-secondary submit-btn">Submit</button>
+</form>
+
+<div class="list-items">
+ <!-- grocery list goes here -->
+</div>
+</section>
+
+ <script src="jquery.min.js"></script>
+ <script src="grocery.js"></script>
+</body>
+</html>

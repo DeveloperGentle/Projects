@@ -1,0 +1,94 @@
+<html lang="en">
+<head>
+ <style>
+  * {
+   transition:all 300ms ease-out;
+   box-sizing: border-box;
+   font-weight: 500;
+   font-family: "Poppins",'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .questions-container {
+   height: max-content;
+   width: 430px;
+   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+
+  .question-title {
+   font-size: 1.1em;
+  }
+
+  .toggler-1, .toggler-2, .toggler-3 {
+   float: right;
+   cursor: pointer;
+   
+  }
+
+  .question-answer-1,.question-answer-2,.question-answer-3 {
+   display: none;
+  }
+
+  @media (max-width:700px)  {
+   section {
+    transform: scale(0.9,0.9);
+    
+   }
+   .questions-container {
+    width: 400px;
+   }
+  }
+ 
+
+ </style>
+ <link rel="stylesheet" href="bootstrap.min.css">
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>questions</title>
+</head>
+<body>
+
+ <main>
+
+ <h3 class="mb-5 mt-5 text-center">General questions</h3>
+
+ <section class="d-flex  justify-content-center">
+
+  <div class="d-flex flex-column  justify-content-center gap-3">
+<div class="questions-container p-4">
+ 
+ <div class="question-title">Do you accept all major credit cards?<span class="toggler-1">+</span></div>
+
+ <div class="question-answer-1">
+  <hr/> 
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, minima fugit! Tenetur optio eaque qui?</p>
+ </div>
+</div>
+
+<div class="questions-container p-4">
+ 
+ <div class="question-title">Do you support local farmers?<span class="toggler-2">+</span></div>
+
+ <div class="question-answer-2">
+  <hr/> 
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta autem voluptatum officiis omnis, debitis qui quo accusantium recusandae incidunt veniam!</p>
+ </div>
+</div>
+
+<div class="questions-container p-4">
+
+ <div class="question-title">Do you use organic ingredients?<span class="toggler-3">+</span></div>
+
+ <div class="question-answer-3">
+ <hr/> 
+ <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate corrupti porro praesentium optio repellendus! Incidunt.</p>
+</div>
+</div>
+</div>
+
+ </section>
+</main>
+<script src="jquery.min.js"></script>
+ <script src="questions.js"></script>
+</body>
+</html>
