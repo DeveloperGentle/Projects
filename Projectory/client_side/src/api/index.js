@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const API = axios.create({ baseURL: 'http://localhost:7000' })
+const API = axios.create({ baseURL: 'https://amazon-s50f.onrender.com' })
 
 export const fetchProjects = () => API.get('/projects')
 export const createProject = (newProject) => API.post('/projects',newProject)
