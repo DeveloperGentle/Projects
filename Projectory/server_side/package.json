@@ -10,7 +10,7 @@
   },
   "scripts": {
   "install-server": "npm install",
-  "start-server": "npm start",
+  "start-server": "node index.js",
     "start": "nodemon index.js"
   },
   "type": "module"
