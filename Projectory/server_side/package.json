@@ -9,6 +9,7 @@
     "mongoose": "^7.0.0"
   },
   "scripts": {
+  "install-server": "npm install",
     "start": "nodemon index.js"
   },
   "type": "module"
