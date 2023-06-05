@@ -16,7 +16,7 @@ app.use('/posts',postRoutes)
 app.use('/user',userRoutes)
 
 
-const port = process.env.port
+const port = process.env.PORT
 
 mongoose.connect(process.env.CONNECTION_URL,{useNewUrlParser:true,useUnifiedTopology:true})
 .then(() => {
