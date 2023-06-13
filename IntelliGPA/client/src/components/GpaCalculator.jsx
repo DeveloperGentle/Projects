@@ -60,7 +60,7 @@ const theme = createTheme({
 }
 
 const checkDegreeClass = (gpa) => {
- return gpa >= 4.5 ? 'First class' : gpa < 4.5 && gpa >= 3.5 ? 'Second class upper' : gpa < 3.5 && gpa >= 2.5 ? 'Second class lower' : 'Third class'
+ return gpa >= 4.50 ? 'First class' : gpa < 4.50 && gpa >= 3.50 ? 'Second class upper' : gpa < 3.50 && gpa >= 2.50 ? 'Second class lower' : 'Third class'
 }
   return (
    <ThemeProvider theme={theme}>
@@ -122,8 +122,8 @@ const checkDegreeClass = (gpa) => {
       <Button onClick={handleAddRow} color="primary" variant="contained" startIcon={<Add/>} style={{marginTop:"10px"}}>Add Course</Button>
       <div><Button onClick={calculateGpa} color="primary" variant="contained"  style={{marginTop:"10px"}}>Calculate GPA</Button></div>
 <Dialog open={openModal} onClose={handleCloseModal}>
-<DialogContent><div>Your GPA is {gpaResult}, that's approximately {parseFloat(gpaResult).toFixed(1)}({checkDegreeClass(parseFloat(gpaResult).toFixed(1))}{checkDegreeClass(parseFloat(gpaResult).toFixed(1)) === 'First class' ? <span>{'\u{1F632}'}</span>
-: checkDegreeClass(parseFloat(gpaResult).toFixed(1)) === 'Second class upper' ? <span>{'\u{1F44F}'}</span> : checkDegreeClass(parseFloat(gpaResult).toFixed(1)) === 'Second class lower' ? <span>{'\u{1F44D}'}</span> : <span>{'\u{1F622}'}</span>})</div></DialogContent>
+<DialogContent><div>Your GPA is {gpaResult}, that's approximately {parseFloat(gpaResult).toFixed(2)}({checkDegreeClass(parseFloat(gpaResult).toFixed(2))}{checkDegreeClass(parseFloat(gpaResult).toFixed(2)) === 'First class' ? <span>{'\u{1F632}'}</span>
+: checkDegreeClass(parseFloat(gpaResult).toFixed(2)) === 'Second class upper' ? <span>{'\u{1F44F}'}</span> : checkDegreeClass(parseFloat(gpaResult).toFixed(2)) === 'Second class lower' ? <span>{'\u{1F44D}'}</span> : <span>{'\u{1F622}'}</span>})</div></DialogContent>
 <DialogActions>
 <Button onClick={handleCloseModal} color="primary">Close</Button>
 </DialogActions>
