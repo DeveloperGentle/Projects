@@ -69,7 +69,7 @@ const checkDegreeClass = (gpa) => {
         <Table>
           <TableHead>
             <TableRow>
-              <TableCell>Course</TableCell>
+              <TableCell>Course code</TableCell>
               <TableCell>Grade</TableCell>
               <TableCell>Credit</TableCell>
               <TableCell />
@@ -81,7 +81,7 @@ const checkDegreeClass = (gpa) => {
                 <TableCell>
                   <TextField
                     value={row.subject}
-                    placeholder="e.g Organic Chemistry"
+                    placeholder="e.g CHM113"
                     onChange={(event) => handleChange(event, index, 'subject')}
                   />
                 </TableCell>
